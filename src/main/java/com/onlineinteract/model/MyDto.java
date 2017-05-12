@@ -1,10 +1,11 @@
 package com.onlineinteract.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
-@JsonIgnoreProperties(value = { "intValue" })
+// @JsonIgnoreProperties(value = { "intValue" })
 public class MyDto {
 	private String stringValue;
+	@JsonIgnore
 	private int intValue;
 	private boolean booleanValue;
 
